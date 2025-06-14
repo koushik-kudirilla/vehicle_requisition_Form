@@ -40,7 +40,7 @@ Vehicle-Requisition-System/
 │   │   └── lib/                     # Runtime libraries (JAR files)
 │   ├── images/                      # Logos and user icons
 │   ├── css/                         # Stylesheets (styles.css)
-│   └── *.jsp                        # JSP pages for user interfaces
+│   └── jsp                          # JSP pages for user interfaces
 ├── database/                        # Database schema
 │   └── vehicle_requisition.sql      # SQL schema and seed data
 ├── output/                          # Screenshots or demo outputs
