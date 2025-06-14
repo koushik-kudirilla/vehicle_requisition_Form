@@ -1,0 +1,190 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, #e0eafc, #cfdef3);
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    background-color: #fff;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    flex: 1;
+}
+
+.header {
+    text-align: center;
+    color: #003366;
+    margin-bottom: 30px;
+}
+
+.logo {
+    width: 120px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.header h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.header h2, .header h3 {
+    margin: 4px 0;
+}
+
+.form-title {
+    margin-top: 20px;
+    font-size: 22px;
+    text-decoration: underline;
+    color: #222;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+label {
+    font-weight: 600;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="password"],
+select,
+textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+textarea {
+    grid-column: span 2;
+    resize: vertical;
+}
+
+input[type="button"].btn ,input[type="submit"], button {
+    grid-column: span 2;
+    padding: 12px;
+    background-color: #005a9e;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="button"].btn:hover,input[type="submit"]:hover , button:hover{
+    background-color: #003e73;
+}
+
+@media (max-width: 700px) {
+    
+    form {
+        grid-template-columns: 1fr;
+    }
+
+    textarea,
+    input[type="submit"] {
+        grid-column: span 1;
+    }
+}
+
+h1 {
+    color: #003366;
+}
+
+h2 {
+    color: #005a9e;
+}
+
+p {
+    font-size: 16px;
+}
+
+.options {
+    margin-top: 20px;
+}
+
+.options a {
+    display: inline-block;
+    margin: 10px 15px 0 0;
+    padding: 10px 20px;
+    background-color: #005a9e;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.options a:hover {
+    background-color: #003e73;
+}
+
+.button-link {
+    display: inline-block;
+    padding: 8px 14px;
+    background-color: #005a9e;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.button-link:hover {
+    background-color: #003e73;
+}
+@media print {
+    .options {
+        display: none !important;
+    }
+    .navbar,
+    .footer,
+    .btn,
+    button,
+    input[type="button"],
+    .page-wrapper > .navbar,
+    .page-wrapper > .footer {
+        display: none !important;
+    }
+
+    .container {
+        box-shadow: none;
+        padding: 0;
+        border-radius: 0;
+        background: white;
+    }
+
+    table.styled-table,
+    table.styled-table th,
+    table.styled-table td {
+        border: 1px solid #000 !important;
+        background: white;
+    }
+
+    body {
+        background: white;
+    }
+}
+
+
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.page-wrapper {
+    min-height: 100vh; /* full viewport height */
+    display: flex;
+    flex-direction: column;
+}

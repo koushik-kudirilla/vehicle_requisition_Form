@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context path="/vehicle_requisition_Form">
+
+  <Resource auth="Container" 
+            driverClassName="com.mysql.cj.jdbc.Driver" 
+            factory="org.apache.tomcat.jdbc.pool.DataSourceFactory" 
+            maxIdle="10" 
+            maxTotal="20" 
+            maxWaitMillis="-1" 
+            name="jdbc/vehicle_requisition" 
+            password="your_password" 
+            type="javax.sql.DataSource" 
+            url="jdbc:mysql://localhost:3306/vehicle_requisition" 
+            username="root"/>
+  
+</Context>
